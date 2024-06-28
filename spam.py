@@ -16,22 +16,24 @@ def ngl():
     ☆         ███╗   ██╗████████╗████████╗████████╗      ☆
     ☆         ████╗  ██║╚══██╔══╝╚══██╔══╝╚══██╔══╝      ☆
     ☆         ██╔██╗ ██║   ██║      ██║      ██║         ☆
-    ☆         ██║╚██╗██║   ██║      ██║      ██║     ╔════════════════╗
-    ☆         ██║ ╚████║   ██║      ██║      ██║     ║ Version: 1.0.0 ║
-    ☆         ╚═╝  ╚═══╝   ╚═╝      ╚═╝      ╚═╝     ╚════════════════╝
+    ☆         ██║╚██╗██║   ██║      ██║      ██║         ╔════════════════╗
+    ☆         ██║ ╚████║   ██║      ██║      ██║         ║ Version: 1.0.0 ║
+    ☆         ╚═╝  ╚═══╝   ╚═╝      ╚═╝      ╚═╝         ╚════════════════╝
     ─════════════════════════════════════════════════════─
               ╔════════════════════════════╗
               ║    Nguyễn Trịnh Tuấn Tú    ║
               ║      Dev by KAR13MA09      ║
               ║       Page:KAR13MA09       ║
               ╚════════════════════════════╝
+    
+    
     """))
 
     nglusername = input(Colorate.Vertical(Colors.red_to_purple,"Username: "))
     message = input(Colorate.Vertical(Colors.red_to_purple,"Message: "))
     Count = int(input(Colorate.Vertical(Colors.red_to_purple,"Count:")))
 
-    print(Colorate.Vertical(Colors.green_to_red,"══════════════════════════════════════════════════════════════════════════"))
+    print(Colorate.Vertical(Colors.green_to_red,"════════════════════════════════════════════════════════"))
 
     value =0
     notsend =0
@@ -65,12 +67,12 @@ def ngl():
         if response.status_code == 200:
             notsend = 0
             value += 1
-            print(G+"[+]"+W+"Đã Gửi Thành Công =>"+G+"{}".format(value)+W)
+            print(G+"[+]"+W+"Send =>"+G+"{}".format(value)+W)
         else:
             notsend += 1
-            print(R+"[-]"+W+"Trời Ơi! Tin Nhắn Gửi Bị Lỗi Đợi Tí Đang Gửi Lại")
+            print(R+"[-]"+W+"Not Send")
         if notsend == 10:
-            print(R+"[!]"+W+"Đợi 5 Giây Nha Ku")
+            print(R+"[!]"+W+"Wait 5 Seconds")
             time.sleep(5)
             notsend = 0
 ngl()
