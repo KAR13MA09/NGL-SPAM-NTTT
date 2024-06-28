@@ -31,7 +31,7 @@ def ngl():
     message = input(Colorate.Vertical(Colors.red_to_purple,"Message: "))
     Count = int(input(Colorate.Vertical(Colors.red_to_purple,"Count:")))
 
-    print(Colorate.Vertical(Colors.green_to_red,"**********************************************************"))
+    print(Colorate.Vertical(Colors.green_to_red,"══════════════════════════════════════════════════════════════════════════"))
 
     value =0
     notsend =0
