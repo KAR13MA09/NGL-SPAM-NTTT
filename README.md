@@ -5,5 +5,9 @@
 
 <img src="https://github.com/KAR13MA09/NGL-SPAM-NTTT/blob/main/Untitled.png"/></div>
 
+#YOUTUBE
+https://www.youtube.com/@KAR13MA09_vnpc-vn
+Hướng Dẫn #1
+
 <iframe src="Screencast_2024-06-28-21-11-43.mp4" type="video/mp4"></iframe>
 
