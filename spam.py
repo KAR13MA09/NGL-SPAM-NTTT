@@ -65,12 +65,12 @@ def ngl():
         if response.status_code == 200:
             notsend = 0
             value += 1
-            print(G+"[+]"+W+"Send =>"+G+"{}".format(value)+W)
+            print(G+"[+]"+W+"Đã Gửi Thành Công =>"+G+"{}".format(value)+W)
         else:
             notsend += 1
-            print(R+"[-]"+W+"Not Send")
+            print(R+"[-]"+W+"Trời Ơi! Tin Nhắn Gửi Bị Lỗi Đợi Tí Đang Gửi Lại")
         if notsend == 10:
-            print(R+"[!]"+W+"Wait 5 Seconds")
+            print(R+"[!]"+W+"Đợi 5 Giây Nha Ku")
             time.sleep(5)
             notsend = 0
 ngl()
